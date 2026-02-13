@@ -1,5 +1,5 @@
 // src/lib/api.ts
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://exohabitai-backend-jff0.onrender.com';
 
 export interface HealthResponse {
   status: string;
