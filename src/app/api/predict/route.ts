@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // Flask backend URL - update this to match your Flask server
-const FLASK_API_URL = process.env.FLASK_API_URL || 'http://localhost:5000';
+const FLASK_API_URL = process.env.FLASK_API_URL || 'https://exohabitai-backend-jff0.onrender.com';
 
 export async function POST(request: NextRequest) {
   try {
