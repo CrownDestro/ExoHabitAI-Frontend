@@ -1,4 +1,4 @@
-// src/app/predict/page.tsx (ENHANCED WITH REAL EXAMPLES & COMPOSITION TYPES)
+// src/app/predict/page.tsx (FIXED TYPESCRIPT ERRORS)
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -32,7 +32,7 @@ const REAL_EXAMPLES = [
     st_met: -0.17,
     st_logg: 5.037,
     disc_year: 2015,
-    st_type: 'M',
+    st_type: 'M' as const,
     pl_type: 'rocky' as const,
     description: 'Rocky exoplanet around red dwarf'
   },
@@ -44,7 +44,7 @@ const REAL_EXAMPLES = [
     st_met: -0.08,
     st_logg: 4.48,
     disc_year: 2008,
-    st_type: 'G',
+    st_type: 'G' as const,
     pl_type: 'jupiter' as const,
     description: 'Hot Jupiter - gas giant'
   },
@@ -56,7 +56,7 @@ const REAL_EXAMPLES = [
     st_met: 0.29,
     st_logg: 5.026,
     disc_year: 2009,
-    st_type: 'M',
+    st_type: 'M' as const,
     pl_type: 'neptune' as const,
     description: 'Neptune-like mini-Neptune'
   },
@@ -68,7 +68,7 @@ const REAL_EXAMPLES = [
     st_met: 0.04,
     st_logg: 4.926,
     disc_year: 2019,
-    st_type: 'M',
+    st_type: 'M' as const,
     pl_type: 'super_earth' as const,
     description: 'Super-Earth candidate'
   }
